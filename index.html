@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="#e75509" data-transition="slide">
+					<img src="img/elemente.jpg" alt="Logo elemente" style="border: none; box-shadow: none">
+					<h1>Responsive<br>
+						Webdesign
+					</h1>
+				</section>
+				<section>
+					<section data-background-transition="fade" >
+							<h2>Responsive Webdesign?</h2>
+							<canvas width="1024" height="768" id="tagCloudOne">
+								<p>Anything in here will be replaced on browsers that support the canvas element</p>
+								<ul>
+									<li><a href="#">RWD</a></li>
+									<li><a href="#">Mobile First</a></li>
+									<li><a href="#">Device Experiences</a></li>
+									<li><a href="#">RESS</a></li>
+									<li><a href="#">Feature detection</a></li>
+									<li><a href="#">Content First</a></li>
+									<li><a href="#">Media Queries</a></li>
+									<li><a href="#">Fluid Grids</a></li>
+									<li><a href="#">Breakpoints</a></li>
+									<li><a href="#">Gracefull degradation</a></li>
+								</ul>
+							</canvas>
+					</section>
+					<section data-background-transition="zoom" data-transition="zoom" >
+							<h2>Responsive Webdesign?</h2>
+							<canvas width="1024" height="768" id="tagCloudTwo">
+								<p>Anything in here will be replaced on browsers that support the canvas element</p>
+								<ul>
+									<li><a href="#">?</a></li>
+									<li><a href="#">??</a></li>
+									<li><a href="#">???</a></li>
+									<li><a href="#">?</a></li>
+									<li><a href="#">??</a></li>
+									<li><a href="#">?</a></li>
+									<li><a href="#">????</a></li>
+									<li><a href="#">?</a></li>
+									<li><a href="#">???</a></li>
+									<li><a href="#">?</a></li>
+									<li><a href="#">??</a></li>
+								</ul>
+							</canvas>
+					</section>
+					<section >
+						<h2>Fragestellungen des Vortrags:</h2>
+						<span class="fragment fade-in">
+								<h3>Was versteht man unter Responsive Webdesign?</h3>
+						</span>
+						<span class="fragment fade-in">
+								<h3>Was ist der Unterschied zu "mobilen" Seiten?</h3>
+						</span>
+						<span class="fragment fade-in">
+								<h3>Warum sollte man Responsive Webdesign einsetzen?</h3>
+						</span>
+						<span class="fragment fade-in">
+								<h3>Kurze Begriffsfindung</h3>
+						</span>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Was versteht man unter Responsive Webdesign?</h1>
+					</section>
+					<section>
+						<h1>Beispiele</h1>
+						<a class="fragment fade-in" href="http://mediaqueri.es/">http://mediaqueri.es/</a>
+						<br>
+						<a class="fragment fade-in" href="http://stuffandnonsense.co.uk/">stuffandnonsense.co.uk</a>
+						<br>
+						<a class="fragment fade-in" href="http://thenextweb.com/">thenextweb.com</a>
+					</section>
+				</section>
+				<section>
+					<h3>Was ist der Unterschied zu "mobilen" Seiten?</h3>
+					<table class="formatHTML5">
+						<thead class="fragment fade-in">
+							<tr>
+								<td>RWD</td>
+								<td>Mobile Seite</td>
+							</tr>
+						</thead>
+						<tbody class="fragment fade-in">
+							<tr>
+								<td class="fragment fade-in">gesamte Seite eine Domain</td>
+								<td class="fragment fade-in">extra Domain für den mobilen Auftritt</td>
+							</tr>
+							<tr class="fragment fade-in">
+								<td class="fragment fade-in">Das Design passt sich dynamisch der Auflösung an</td>
+								<td class="fragment fade-in">Das Design wird anhand des Gerätes konfiguriert</td>
+							</tr>
+							<tr class="fragment fade-in">
+								<td class="fragment fade-in">Conent in jeder Version zugänglich </td>
+								<td class="fragment fade-in">ausgewählter Content, Content wird teilweise versteckt</td>
+							</tr>
+							<tr class="fragment fade-in">
+								<td class="fragment fade-in">Content muss nur einmal gepflegt werden</td>
+								<td class="fragment fade-in">content muss mehrfach gepflegt werden</td>
+							</tr>
+							<tr class="fragment fade-in">
+								<td class="fragment fade-in">oft nicht sehr performant</td>
+								<td class="fragment fade-in">performanter</td>
+							</tr>
+							<tr class="fragment fade-in">
+								<td class="fragment fade-in">schwer zu designen</td>
+								<td class="fragment fade-in">leicht zu designen</td>
+							</tr>
+							<tr class="fragment fade-in">
+								<td class="fragment fade-in">laut Google mehr conversion <a href="http://analytics.blogspot.de/2012/07/mobile-websites-vs-responsive-design.html">*</a></td>
+								<td class="fragment fade-in">laut Google weniger conversion<a href="http://analytics.blogspot.de/2012/07/mobile-websites-vs-responsive-design.html">*</a></td>
+							</tr>
+						</tbody>
+						<tfoot></tfoot>
+					</table>
+				</section>
+				<section data-transition="zoom" data-background-transition="zoom">
+					<section data-transition="zoom" data-background-transition="zoom">
+						<h1>Warum sollte man Responsive Webdesign einsetzen?</h1>
+					</section>
+					<section data-transition="zoom" data-background-transition="zoom">
+						<img src="img/this-is-not-web.png" width="1024" height="768" alt="">
+					</section >
+					<section data-transition="zoom" data-background-transition="zoom">
+						<img src="img/this-is-the-web.png" width="1024" height="768" alt="">
+					</section>
+					<section data-transition="zoom" data-background-transition="zoom">
+						<img src="img/this-will-bethe-web.png" width="1024" height="768" alt="">
+					</section>
+					<section data-transition="zoom" data-background-transition="zoom">
+						<h3>StatCounter Mobile vs. Desktop</h3>
+						<img src="img/StatCounter-mobile_vs_desktop-DE-monthly-200812-201306.jpg">
+						<p>momentan sind wir bei ~15 % mobilen Zugriffen</p>
+					</section>
+					<section data-transition="zoom" data-background-transition="zoom">
+						<h3>StatCounter Mobile Resolution</h3>
+						<img src="img/StatCounter-mobile_resolution-ww-monthly-201303-201305.jpg">
+						<p> 13 vers. Auflösungen plus "Andere"(~30 %) </p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Kurze Begriffsübersicht</h3>
+						<h5>(nicht technischer Natur)</h5>
+						<ul>
+							<li class="fragment fade-in"><a href="http://alistapart.com/article/responsive-web-design">RWD</a>
+								<ul class="fragment fade-in">
+									<li>Responsive Webdesign</li>
+								</ul>
+							</li>
+							<li class="fragment fade-in"><a href="http://bradfrostweb.com/blog/web/mobile-first-responsive-web-design/">Mobile First</a>
+								<ul class="fragment fade-in">
+									<li>
+										Design-Philosophie in der der Mobile Auftritt die Priorität besitzt 
+									</li>
+								</ul>
+							</li>
+							<li class="fragment fade-in"><a href="http://www.lukew.com/ff/entry.asp?1509">Device Experiences</a>
+								<ul class="fragment fade-in">
+									<li>
+										Auf Geräte abgestimmtes Design
+									</li>
+								</ul>
+							</li>
+							<li class="fragment fade-in"><a href="http://adactio.com/journal/4523/">Content First</a>
+								<ul class="fragment fade-in">
+									<li>
+										Design-Philosophie in der der Content das Design bestimmt 
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Fragen?</h1>
+					</section>
+					<section>
+						<h1>To be continued...</h1>
+					</section>
+				</section>
+			<!-- slides -->
+			</div>
+		<!-- reveal -->
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/jquery.tagcanvas.min.js"></script>
+
+		<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				width: 1024,
+				height: 768,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+			
+			// TagCloud initialisieren
+			$('#tagCloudOne').tagcanvas({
+				textColour : '#ffffff',
+				textHeight : 35,
+				outlineThickness : 1,
+				initial : [0.1,-0.05],
+				maxSpeed : 0.03,
+				noMouse : true,
+				depth : 0.75
+			});
+			$('#tagCloudTwo').tagcanvas({
+				textColour : '#ffffff',
+				textHeight : 50,
+				outlineThickness : 1,
+				initial : [0.1,-0.05],
+				maxSpeed : 0.03,
+				noMouse : true,
+				depth : 0.75
+			});
+
+		</script>
+
+	</body>
+</html>
